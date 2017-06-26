@@ -12,7 +12,10 @@ namespace POO
         {
             ContaCorrente cc = new ContaCorrente();
 
+            cc.SetAgencia(2017);
 
+            Console.WriteLine(cc.Agencia);
+            Console.ReadLine();
         }
     }
 }

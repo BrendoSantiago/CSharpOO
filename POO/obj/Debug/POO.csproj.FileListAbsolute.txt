@@ -1,1 +1,7 @@
 C:\Users\Brendo Santiago\Documents\Visual Studio 2015\Projects\_SpaUserControl\CSharpOO\POO\bin\Debug\POO.exe.config
+C:\Users\Brendo Santiago\Documents\Visual Studio 2015\Projects\CSharpOO\POO\bin\Debug\POO.exe.config
+C:\Users\Brendo Santiago\Documents\Visual Studio 2015\Projects\CSharpOO\POO\bin\Debug\POO.exe
+C:\Users\Brendo Santiago\Documents\Visual Studio 2015\Projects\CSharpOO\POO\bin\Debug\POO.pdb
+C:\Users\Brendo Santiago\Documents\Visual Studio 2015\Projects\CSharpOO\POO\obj\Debug\POO.csprojResolveAssemblyReference.cache
+C:\Users\Brendo Santiago\Documents\Visual Studio 2015\Projects\CSharpOO\POO\obj\Debug\POO.exe
+C:\Users\Brendo Santiago\Documents\Visual Studio 2015\Projects\CSharpOO\POO\obj\Debug\POO.pdb
