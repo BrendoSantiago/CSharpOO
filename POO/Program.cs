@@ -9,7 +9,10 @@ namespace POO
             ContaCorrente cc = new ContaCorrente();
             ContaPoupanca cp = new ContaPoupanca();
 
-            Console.WriteLine("Agência");
+            Console.WriteLine("Taxa de Movimento " + cc.TaxaMovimento);
+            Console.WriteLine("Limite (Conta Corrente) R$ " + cc.Limite);
+            Console.WriteLine("Limite (Conta Poupança) R$ " + cp.Limite);
+            
             Console.ReadLine();
         }
     }
