@@ -1,25 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace POO
+﻿namespace POO
 {
-    public class ContaPoupanca
+    public class ContaPoupanca : Conta
     {
-        private int agencia;
-        private int numeroConta;
-        private decimal saldo;
-
-        void Sacar(decimal valor)
-        {
-            saldo -= valor;
-        }
-
-        void Depositar (decimal valor)
-        {
-            saldo += valor;
-        }
     }
 }

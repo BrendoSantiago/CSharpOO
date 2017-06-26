@@ -1,20 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POO
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             ContaCorrente cc = new ContaCorrente();
+            ContaPoupanca cp = new ContaPoupanca();
 
-            cc.SetAgencia(2017);
-
-            Console.WriteLine(cc.Agencia);
+            Console.WriteLine("Agência");
             Console.ReadLine();
         }
     }
