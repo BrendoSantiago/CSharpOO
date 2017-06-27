@@ -21,5 +21,10 @@
         {
             this.TaxaMovimento = 0.1m;
         }
+
+        public override void Sacar(decimal valor)
+        {
+            base.Sacar(valor + (taxaMovimento * valor));
+        }
     }
 }

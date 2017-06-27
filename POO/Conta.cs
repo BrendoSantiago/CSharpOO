@@ -78,12 +78,12 @@
             this.agencia = agencia;
         }
 
-        private void Sacar(decimal valor)
+        public virtual void Sacar(decimal valor)
         {
             Saldo -= valor;
         }
 
-        private void Depositar(decimal valor)
+        public void Depositar(decimal valor)
         {
             Saldo += valor;
         }
