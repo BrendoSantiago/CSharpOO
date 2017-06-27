@@ -29,7 +29,7 @@
                 return numeroConta;
             }
 
-            set
+            private set
             {
                 numeroConta = value;
             }
@@ -42,7 +42,7 @@
                 return saldo;
             }
 
-            set
+            private set
             {
                 saldo = value;
             }
@@ -55,7 +55,7 @@
                 return limite;
             }
 
-            set
+            private set
             {
                 limite = value;
             }
@@ -80,12 +80,12 @@
 
         public virtual void Sacar(decimal valor)
         {
-            Saldo -= valor;
+            saldo -= valor;
         }
 
         public void Depositar(decimal valor)
         {
-            Saldo += valor;
+            saldo += valor;
         }
     }
 }
