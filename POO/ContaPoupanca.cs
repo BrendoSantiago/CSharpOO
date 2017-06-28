@@ -1,12 +1,9 @@
-﻿using System;
-
-namespace POO
+﻿namespace POO
 {
     public class ContaPoupanca : Conta, ITributo
     {
         public ContaPoupanca() : base(75.00m)
         {
-                
         }
 
         public override void Depositar(decimal valor)

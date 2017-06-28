@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace POO
+﻿namespace POO
 {
     public class ContaCorrente : Conta
     {
