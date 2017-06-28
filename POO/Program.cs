@@ -6,6 +6,20 @@ namespace POO
     {
         private static void Main(string[] args)
         {
+            //try
+            //{
+            //    int a = 10;
+            //    int b = 0;
+
+            //    int resultado = a / b;
+
+            //    Console.WriteLine(resultado);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
             ContaCorrente cc = new ContaCorrente();
             ContaPoupanca cp = new ContaPoupanca();
 
@@ -27,7 +41,7 @@ namespace POO
 
             Console.WriteLine(rel.SaldoGeral);
             Console.WriteLine(rel.TributoGeral);
-            
+
             Console.ReadLine();
         }
     }
