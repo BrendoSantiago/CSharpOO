@@ -1,4 +1,6 @@
-﻿namespace POO
+﻿using System;
+
+namespace POO
 {
     public class ContaCorrente : Conta
     {
@@ -25,6 +27,11 @@
         public override void Sacar(decimal valor)
         {
             base.Sacar(valor + (taxaMovimento * valor));
+        }
+
+        public override void Depositar(decimal valor)
+        {
+            base.Saldo += valor;
         }
     }
 }

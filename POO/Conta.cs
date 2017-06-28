@@ -1,6 +1,6 @@
 ﻿namespace POO
 {
-    public class Conta
+    public abstract class Conta
     {
         private int agencia;
         private int numeroConta;
@@ -42,7 +42,7 @@
                 return saldo;
             }
 
-            private set
+            protected set
             {
                 saldo = value;
             }
@@ -83,9 +83,6 @@
             saldo -= valor;
         }
 
-        public void Depositar(decimal valor)
-        {
-            saldo += valor;
-        }
+        public abstract void Depositar(decimal valor);
     }
 }
