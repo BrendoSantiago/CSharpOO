@@ -6,43 +6,55 @@ namespace POO
     {
         private static void Main(string[] args)
         {
-            //try
-            //{
-            //    int a = 10;
-            //    int b = 0;
+            try
+            {
+                int a = 10;
+                int b = 0;
 
-            //    int resultado = a / b;
+                int resultado = a / b;
 
-            //    Console.WriteLine(resultado);
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
+                Console.WriteLine(resultado);
 
-            ContaCorrente cc = new ContaCorrente();
-            ContaPoupanca cp = new ContaPoupanca();
+                int[] vetor = new int[] { 1, 2, 3 };
+                Console.WriteLine(vetor[10]);
+            }
+            catch (System.DivideByZeroException ex)
+            {
+                Console.WriteLine("Erro: Divisão por zero!");
+            }
+            catch (System.IndexOutOfRangeException ex)
+            {
+                Console.WriteLine("Erro: Fora do índice da coleção!");
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex.GetType());
+                Console.WriteLine(ex.Message);
+            }
 
-            cc.Depositar(1000);
-            cp.Depositar(1000);
+            //ContaCorrente cc = new ContaCorrente();
+            //ContaPoupanca cp = new ContaPoupanca();
 
-            cc.Sacar(200);
-            cp.Sacar(200);
+            //cc.Depositar(1000);
+            //cp.Depositar(1000);
 
-            Console.WriteLine("Taxa de Movimento " + cc.TaxaMovimento);
-            Console.WriteLine("Saldo (Conta Corrente) R$ " + cc.Saldo);
-            Console.WriteLine("Saldo (Conta Poupança) R$ " + cp.Saldo);
+            //cc.Sacar(200);
+            //cp.Sacar(200);
 
-            Relatorio rel = new Relatorio();
-            rel.Somar(cc);
-            rel.Somar(cp);
+            //Console.WriteLine("Taxa de Movimento " + cc.TaxaMovimento);
+            //Console.WriteLine("Saldo (Conta Corrente) R$ " + cc.Saldo);
+            //Console.WriteLine("Saldo (Conta Poupança) R$ " + cp.Saldo);
 
-            rel.SomarTributos(cp);
+            //Relatorio rel = new Relatorio();
+            //rel.Somar(cc);
+            //rel.Somar(cp);
 
-            Console.WriteLine(rel.SaldoGeral);
-            Console.WriteLine(rel.TributoGeral);
+            //rel.SomarTributos(cp);
 
-            Console.ReadLine();
+            //Console.WriteLine(rel.SaldoGeral);
+            //Console.WriteLine(rel.TributoGeral);
+
+            Console.Readline();
         }
     }
 }
