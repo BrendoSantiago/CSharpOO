@@ -9,20 +9,20 @@ namespace POO
             try
             {
                 int a = 10;
-                int b = 0;
+                int b = 2;
 
                 int resultado = a / b;
 
                 Console.WriteLine(resultado);
 
                 int[] vetor = new int[] { 1, 2, 3 };
-                Console.WriteLine(vetor[10]);
+                Console.WriteLine(vetor[0]);
             }
-            catch (System.DivideByZeroException ex)
+            catch (System.DivideByZeroException)
             {
                 Console.WriteLine("Erro: Divisão por zero!");
             }
-            catch (System.IndexOutOfRangeException ex)
+            catch (System.IndexOutOfRangeException)
             {
                 Console.WriteLine("Erro: Fora do índice da coleção!");
             }
@@ -30,6 +30,10 @@ namespace POO
             {
                 //Console.WriteLine(ex.GetType());
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Fim da Execução :)");
             }
 
             //ContaCorrente cc = new ContaCorrente();
@@ -54,7 +58,7 @@ namespace POO
             //Console.WriteLine(rel.SaldoGeral);
             //Console.WriteLine(rel.TributoGeral);
 
-            Console.Readline();
+            Console.ReadLine();
         }
     }
 }
